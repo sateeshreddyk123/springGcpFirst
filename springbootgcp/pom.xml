@@ -81,7 +81,7 @@
 	      <configuration>
 			<googleContainerRegistryEnabled>true</googleContainerRegistryEnabled>
             
-	        <imageName>gcr.io/cloudbeeswithgke/${project.name}</imageName>
+	        <imageName>gcr.io/spring-gc-first/${project.name}</imageName>
 	        <baseImage>openjdk:8u212-jdk-slim</baseImage>
 	        <entryPoint>["java", "-jar", "/${project.build.finalName}.war"]</entryPoint>
 	        <!-- copy the service's jar file from target into the root directory of the image --> 
