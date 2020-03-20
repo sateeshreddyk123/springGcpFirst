@@ -1,7 +1,7 @@
 # Start with a base image containing Java runtime (mine java 8)
 FROM openjdk:8u212-jdk-slim
 # Add Maintainer Info
-LABEL maintainer="thiru.it111@gmail.com"
+LABEL maintainer="satti1225@gmail.com"
 # Add a volume pointing to /tmp
 VOLUME /tmp
 # Make port 8080 available to the world outside this container
