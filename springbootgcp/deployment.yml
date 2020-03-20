@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springbootgcp
-        image: gcr.io/spring-with-react1/springbootgcp:latest
+        image: gcr.io/spring-with-react1/springbootgcp:v1
         ports:
         - containerPort: 8080
 ---
