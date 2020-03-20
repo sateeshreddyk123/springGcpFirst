@@ -1,32 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-gc-first
+  name: springbootgcp
   labels:
-    app: spring-gc-first
+    app: springbootgcp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring-gc-first
+      app: springbootgcp
   template:
     metadata:
       labels:
-        app: spring-gc-first
+        app: springbootgcp
     spec:
       containers:
-      - name: spring-gc-first
-        image: gcr.io/spring-gc-first/springbootgcp:latest
+      - name: springbootgcp
+        image: gcr.io/spring-with-react1/springbootgcp:latest
         ports:
         - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: spring-gc-first
+  name: springbootgcp
 spec:
   selector:
-    app: spring-gc-first
+    app: springbootgcp
   ports:
     - port: 8080
       targetPort: 8080
